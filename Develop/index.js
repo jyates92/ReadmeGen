@@ -36,9 +36,14 @@ function promptUser() {
 };
 
 function generateREADME(response) {
-  return `${response.name}
+  return `
+  # This README IS BROUGHT TO YOU IN PART BY
+  ![PHOTO](${response.name})
+  # You can reach me at
   ${ response.email}
+  # This current project is called
   ${ response.title}
+  # This project is aboot 
   ${ response.description}`
 };
 
@@ -47,41 +52,14 @@ promptUser()
 .then(function(response) {
   const README = generateREADME(response);
 
-  return writeFileAsync("README.txt", README);
+  return writeFileAsync("README.md", README);
 })
 .then(function() {
-  console.log("Successfully wrote to README.txt");
+  console.log("Successfully wrote to README.md");
 })
 .catch(function(err) {
   console.log(err);
 });
-
-
-// .then(function (response) {
-//     .then(function({ username }) {
-//         const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
-
-//         axios.get(queryUrl).then(function(res) {
-//           const repoNames = res.data.map(function(repo) {
-//             return repo.name;
-//           });
-
-//           const repoNamesStr = repoNames.join("\n");
-
-//           fs.writeFile("repos.txt", repoNamesStr, function(err) {
-//             if (err) {
-//               throw err;
-//             }
-
-//             console.log(`Saved ${repoNames.length} repos`);
-//           });
-//         });
-//       });
-
-//     var fileName = `${response.title}`
-//     `${response.name}`
-//    writeToFile(fileName, response);
-// });
 
 
 
