@@ -36,8 +36,8 @@ function promptUser() {
     },
     {
       type: "input",
-      name: "usage",
-      message: "How do you contribute to this project?",
+      name: "contribution",
+      message: "How is a contribution made to this project?",
     },
     {
       type: "input",
@@ -87,7 +87,8 @@ function generateREADME(response) {
   return `
   # Title
   ${response.title}
-  [Contributing](#usage)
+  [Usage](#usage)
+  [Contributing](#contribution)
   [usage](#name)
   [Email](#email)
   [Github](#github)
@@ -98,8 +99,9 @@ function generateREADME(response) {
   # Usage
   ${response.usage}
   # Contributing
+  ${response.contribution}
+  # Username
   ${response.name}
-
   # Description
   ${response.description}
   # Image
@@ -126,33 +128,3 @@ promptUser()
   .catch(function (err) {
     console.log(err);
   });
-
-// inquirer confirm
-// LICENSING
-// inquirer.prompt([
-//     {
-//     type: "list",
-//     name: "toc",
-//     message: "Would you like to add a section for a Table of Contents?",
-//     // How to add sections using markdown. yes or no
-// },
-// ]);
-
-// function styleDescription() {
-
-// };
-// function styleTOC() {
-
-// };
-
-// function writeToFile(fileName, data) {
-//   fs.writeFile()
-//   var markdown = "## Commit Early and Often One of the most" +
-//     "important skills to master as a web developer is"
-// }
-
-// function init() {
-
-// }
-
-// init();
