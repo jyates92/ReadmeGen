@@ -1,9 +1,28 @@
 
-  # This README IS BROUGHT TO YOU IN PART BY
-  ![PHOTO](https://i.imgur.com/jMIdy9q.jpg)
-  # You can reach me at
-  j
-  # This current project is called
-  jj
-  # This project is aboot 
-  j
+  # Title
+  Boss
+  [Usage](#usage)
+  [Contributing](#name)
+  [Email](#email)
+  [Github](#github)
+  [Description](#description)
+  [Photo](#photo)
+  [Tests](#tests)
+  [License](#license)
+  # Usage
+  Jeremiah
+  # Contributing
+  jyates
+
+  # Description
+  it's a cool project that does cool things.
+  # Image
+  ![PHOTO](img.com)
+  # Tests
+  none.
+  # Email
+  email@github.com
+  # Github
+  github.com/mygithub
+  # License
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
